@@ -1,0 +1,20 @@
+<div class="main-content">
+    <div class="content-block">
+      <div class="content-bar green-bar"></div>
+      <div class="content-title">Services</div>
+      <div class="artisan-cards">
+        <div *ngFor="let artisan of artisansServices" class="artisan-card">
+          <h5>{{ artisan.name }}</h5>
+          <div class="rating">
+            <span *ngFor="let starClass of getStars(artisan.note)">
+              <i [ngClass]="starClass"></i>
+            </span>
+          </div>
+          <p>Spécialité: {{ artisan.specialty }}</p>
+          <p>Localisation: {{ artisan.location }}</p>
+          <a [routerLink]="['/fiche-artisan', artisan.id]">Voir le profil</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  

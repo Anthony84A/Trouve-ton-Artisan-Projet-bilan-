@@ -1,0 +1,151 @@
+.main-content {
+    background-color: #f1f8fc;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  .content-block {
+    background-color: #fff;
+    width: 80%;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+  }
+  
+  .content-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 70px; 
+    height: 6px; 
+    border-radius: 3px;
+  }
+  
+  .red-bar {
+    background-color: #cd2c2e; 
+  }
+  
+  .green-bar {
+    background-color: #82b864; 
+  }
+  
+  .content-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-bottom: 1.5rem;
+  }
+  
+  .steps p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+  }
+  
+  .artisan-cards {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    gap: 2rem;
+  }
+  
+  .artisan-card {
+    background-color: #f1f8fc;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 350px; 
+    text-align: center;
+  }
+  
+  .artisan-card h5 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .artisan-card .rating {
+    font-size: 1.5rem;
+    color: #ffcc00;
+  }
+
+  
+.rating i {
+  font-size: 1.5rem; 
+}
+
+
+.bi-star-fill {
+  color: #ffd700; 
+}
+
+
+.bi-star {
+  color: #e0e0e0; 
+}
+
+
+.bi-star-half {
+  color: #ffd700; 
+}
+  
+  .artisan-card p {
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+  }
+  
+  @media (max-width: 768px) {
+    .content-block {
+      width: 90%;
+    }
+  
+    .content-title {
+      font-size: 1.5rem; 
+    }
+  
+    .steps p {
+      font-size: 1rem; 
+    }
+  
+    .artisan-cards {
+      width: 100%; 
+      gap: 1.5rem;
+    }
+  
+    .artisan-card {
+      width: 90%; 
+      max-width: 300px; 
+    }
+  
+    .content-bar {
+      width: 50px; 
+      height: 4px;
+    }
+  
+    .rating {
+      font-size: 1.2rem; 
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .content-title {
+      font-size: 1.25rem; 
+    }
+  
+    .steps p {
+      font-size: 0.9rem; 
+    }
+  
+    .artisan-card h5 {
+      font-size: 1.2rem; 
+    }
+  }
+  
+
+
+
+  

@@ -1,1 +1,17 @@
-/* You can add global styles to this file, and also import other style files */
+@import "bootstrap/scss/bootstrap";
+
+
+
+@font-face {
+    font-family: 'Graphik';
+    src: url('/src/assets/fonts/Graphik-Medium-Trial.otf') format('otf');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+ * {
+    font-family: 'Graphik', sans-serif;
+  }
+  
+
+

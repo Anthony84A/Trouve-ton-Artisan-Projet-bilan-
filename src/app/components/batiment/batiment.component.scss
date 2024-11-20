@@ -1,0 +1,134 @@
+.main-content {
+  background-color: #f1f8fc;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.content-block {
+  background-color: #fff;
+  width: 80%;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.content-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 70px;
+  height: 6px;
+  border-radius: 3px;
+}
+
+.green-bar {
+  background-color: #82b864; 
+}
+
+.content-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-top: 30px;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.artisan-cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.artisan-card {
+  background-color: #f1f8fc;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  width: 80%; 
+  max-width: 350px; 
+  text-align: center;
+  height: auto;
+}
+
+.artisan-card h5 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.rating {
+  font-size: 1.5rem;
+  color: #ffcc00;
+}
+
+.artisan-card p {
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
+}
+
+/* Styles pour les écrans plus larges (tablettes et desktop) */
+@media (min-width: 768px) {
+  .content-block {
+    width: 90%; 
+  }
+
+  .artisan-card {
+    width: 90%; 
+    max-width: 600px; 
+    padding: 2rem; 
+    height: auto; 
+  }
+
+  .content-title {
+    font-size: 2.5rem; 
+  }
+
+  .rating {
+    font-size: 1.8rem; 
+  }
+}
+
+/* Styles pour les écrans de bureau (desktop) */
+@media (min-width: 1024px) {
+  .artisan-card {
+    width: 95%; 
+    max-width: 900px;
+    padding: 3rem; 
+    height: auto; 
+  }
+
+  .content-title {
+    font-size: 3rem; 
+  }
+
+  .rating {
+    font-size: 2rem; 
+  }
+}
+
+/* Styles pour les écrans mobiles (moins de 768px) */
+@media (max-width: 768px) {
+  .artisan-card {
+    width: 80%; 
+    max-width: 350px; 
+    height: auto; 
+  }
+
+  .content-title {
+    font-size: 1.5rem; 
+  }
+
+  .rating {
+    font-size: 1.5rem; 
+  }
+}

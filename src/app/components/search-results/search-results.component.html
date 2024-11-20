@@ -1,0 +1,21 @@
+<div class="search-results-container">
+    <h1>Résultats de recherche pour "{{ searchQuery }}"</h1>
+  
+    <div *ngIf="artisans.length > 0; else noResults">
+      <div class="artisan-card" *ngFor="let artisan of artisans">
+        <h3>{{ artisan.name }}</h3>
+        <div class="rating">
+          <span *ngFor="let starClass of getStars(artisan.note)">
+            <i [ngClass]="starClass"></i>
+          </span>
+        </div>
+        <p><strong>Spécialité :</strong> {{ artisan.specialty }}</p>
+        <p><strong>Localisation :</strong> {{ artisan.location }}</p>
+      </div>
+    </div>
+  
+    <ng-template #noResults>
+      <p>Aucun artisan trouvé pour "{{ searchQuery }}"</p>
+    </ng-template>
+  </div>
+  
